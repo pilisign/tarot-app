@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarot</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="first">
+        <div class="instructions">
+            <h2 class="text-pop-up-bottom">Le Tarot</h2>
+            <div class="hands">
+                <img src="img/cards-illustration.jpg" alt="tarot-hands">
+            </div>
+            <div class="nameinstruction">
+                <p><strong>Hello! I'm going to tell your lucky</strong></p>
+                <p>Before we start, what's your name?</p>
+                <div><input id="name" type="text" placeholder="name"><span> *</span></div>
+                <p>What do you want to know about</p>
+                <div>
+                    <select id="know-about">
+                        <option value="love">Love</option>
+                        <option value="job">Job</option>
+                        <option value="family">Family</option>
+                        <option value="health">Health</option>
+                    </select><span> *</span>
+                </div>
+            </div>
+            <div class="levelinstruction">
+                <button id="easy">Start!</button>
+            </div>
+            <div id="required" class="none">
+                <p>UPSS...the name is required.</p>
+            </div>
+        </div>
+    </section>
+    <section class= "board hidden">
+        <div class="headerboard">
+            <h2>Le Tarot</h2>
+            <p id="username">Hi <strong><span id="repeatname"></strong></span>! This is your destiny concerning about <strong><span id="about"></span></strong></p>
+            <p class="instruction">Click on each card to see more details</p>
+        </div>
+        <div class="boardcard">
+        </div>
+        <div class="footerboard">
+            <div class="tries">
+                <p id="past"></p>
+                <p id="present"></p>
+                <p id="future"></p>
+            </div>
+        </div>
+        <div class="levelinstruction">
+            <button id="retry">New Read</button>
+         </div>
+    </section>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

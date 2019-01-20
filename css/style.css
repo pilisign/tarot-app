@@ -1,0 +1,303 @@
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+.board .headerboard h2, .first .instructions .text-pop-up-bottom {
+  color: #6918f9;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+.board .headerboard, .board, .first .instructions .levelinstruction, .first .instructions .nameinstruction, .first .instructions, .first, body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.first .instructions button {
+  width: 150px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 2px;
+  font-size: 12px;
+  border: none;
+  background: #7f3ff1;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.first .instructions button:hover {
+  opacity: 0.6;
+  transition: 0.2s all ease;
+}
+.board .boardcard .card span, .board .boardcard .card.show span, .board .boardcard .card {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+body {
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+p {
+  line-height: 1.5em;
+  font-size: 20px;
+  color: #6918f9;
+}
+span {
+  line-height: 1.5em;
+  font-size: 20px;
+  color: #6918f9;
+}
+img {
+  width: 100%;
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.hands {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  width: 315px;
+}
+.first {
+  width: 100%;
+  margin: 50px;
+}
+@-webkit-keyframes entrance {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+            transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes entrance {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+            transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+.first .instructions {
+  width: 550px;
+  border: 5px solid #6918f9;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-animation: entrance 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: entrance 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.first .instructions .levelinstruction {
+  margin-bottom: 20px;
+}
+.first .instructions .required {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+input {
+  height: 25px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 2px solid #7f3ff1;
+  font-family: 'Roboto', sans-serif;
+}
+select {
+  height: 50px;
+  width: 100px;
+  padding: 10px;
+  border: 2px solid #7f3ff1;
+  font-family: 'Roboto', sans-serif;
+  color: #7f3ff1;
+}
+.board {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 10px;
+  border: 5px solid #6943fa;
+}
+.board .headerboard {
+  width: 90%;
+}
+.board .instruction {
+  color: #5f6368;
+  font-size: 14px;
+}
+.board .boardcard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70%;
+}
+.board .boardcard .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  width: 180px;
+  height: 300px;
+  background-image: url("../img/back.jpg");
+  background-size: cover;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  -o-transition: -o-transform 0.4s;
+  transition: transform 0.4s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.board .boardcard .card.flipped {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.board .boardcard .card.show span {
+  display: block;
+}
+.board .boardcard .card:hover {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.board .boardcard .card span {
+  width: 180px;
+  height: 300px;
+  display: none;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.board .boardcard .card .visited {
+  filter: grayscale(100%);
+}
+.board .boardcard .card img {
+  width: 180px;
+  height: 300px;
+}
+.board .footerboard {
+  width: 80%;
+}
+.board .footerboard .tries {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 3px;
+    width: 100%;
+}
+.board .footerboard .tries .description {
+  color: #5f6368;
+  font-size: 15px;
+  width: 30%;
+}
+.none {
+  display: none;
+}
+.board .levelinstruction button {
+  width: 150px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 2px;
+  font-size: 12px;
+  border: none;
+  background: #7f3ff1;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.board .levelinstruction button:hover {
+  opacity: 0.6;
+  transition: 0.2s all ease;
+}
+.btn {
+  width: 50%;
+  height: auto;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 2px;
+  font-size: 12px;
+  border: none;
+  background: #26A98D;
+  color: white;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
