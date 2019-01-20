@@ -1,5 +1,6 @@
 ## Tarot app 🔮
 
+https://pilisign.github.io/tarot-app/
 Built with html5 and Jquery
 Fully illustrated based upon the 22 Major Arcana cards
 
