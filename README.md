@@ -4,7 +4,7 @@ Built with html5 and Jquery
 Fully illustrated based upon the 22 Major Arcana cards
 
 ### Preview
-![tarot-board](https://github.com/pilisign/tarot-app/tarot-board.jpg)
+![screenshoot](https://github.com/pilisign/tarot-app/blob/master/tarot-board.jpg "Screenshoot of the project")
 
 Beta version
 
