@@ -300,6 +300,8 @@ select {
   cursor: pointer;
 }
 
+/* // media // */
+
 @media (max-width: 600px) {
   .board .footerboard .tries {
   flex-direction: column;
