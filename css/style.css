@@ -202,8 +202,8 @@ select {
 .board .boardcard {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 70%;
+  justify-content: space-around;
+  width: 75%;
 }
 .board .boardcard .card {
   display: flex;
@@ -298,6 +298,40 @@ select {
   background: #26A98D;
   color: white;
   cursor: pointer;
+}
+
+@media (max-width: 990px) {
+  .board .footerboard .tries {
+    flex-direction: column;
+  }
+  .board .footerboard .tries .description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  p {
+    text-align: center;
+  }
+  .first {
+    margin: 0;
+  }
+  .board {
+    margin-top: 0;
+  }
+  .board .boardcard {
+    margin-top: 0;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .board .footerboard .tries {
+    flex-direction: column;
+  }
+  .board .footerboard .tries .description {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
