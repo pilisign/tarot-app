@@ -300,14 +300,7 @@ select {
   cursor: pointer;
 }
 
-@media (max-width: 990px) {
-  .board .footerboard .tries {
-    flex-direction: column;
-  }
-  .board .footerboard .tries .description {
-    width: 100%;
-  }
-}
+/* // media // */
 
 @media (max-width: 600px) {
   p {
